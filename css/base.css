@@ -1,0 +1,68 @@
+﻿@charset "utf-8"; 
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* reset */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select {margin:0; padding:0}
+input,textarea,select,button,table {font:normal 12px/1.25em Dotum,"돋움",sans-serif}
+body.s,.s input,.s textarea,.s select,.s button,.s table {font-family:Dotum, "돋움", sans-serif}
+body {position:relative; overflow-x:hidden}
+body.s {-webkit-text-size-adjust:none}
+img,fieldset {border:none}
+ul,ol {list-style:none}
+table {border-collapse:collapse}
+em,address,i,var {font-style:normal}
+a {color:inherit; text-decoration:none}
+/*a:visited {color:#888}*/
+input,select,button,.button {vertical-align:middle}
+select {height:28px; border:1px solid #B3B3B3; background:#fff}
+input.text {height:28px; padding:0; border:1px solid #B3B3B3; border-radius:3px; text-indent:3px; font-size:14px}
+input.radio,input.check,input.checkbox {height:20px}
+select {border-radius:3px}
+caption,legend {width:0; height:0; line-height:0; font-size:0; visibility:hidden}
+select {/*-webkit-appearance:none; -moz-appearance:none; border:none; width:auto; height:auto*/}
+button , input[type="submit"],input[type="reset"],input[type="button"] {background:none; border:0; cursor:pointer}
+input[type="text"], input[type="search"] {padding:1px; border:1px solid #ccc; height:22px}
+table {width:100%}
+select {height:26px; line-height:22px; border:1px solid #ccc}
+label {margin:0 2px 0}
+iframe {background:#fff}
+
+/**** Isotope filtering ****/
+
+/* font-family */
+body {font-family:Nanum Gothic , 나눔, dotum,돋움, serif; font-size:1.0vw}
+
+/* color */
+
+/* align and float */
+.center {text-align:center}
+
+/* layout */
+#wrap {margin:0 auto; width:100%}
+header {position:relative; border-bottom:1px solid #999}
+h1 {padding-left:0.5em; line-height:2.5em; font-size:8vw; font-weight:800; color:#000}
+#body {padding:30px 0 0 ; width:980px; min-height:780px; overflow:hidden}
+
+/* contents */
+.history {box-sizing:border-box; overflow:hidden; margin:0 auto; padding:2.0em 0; width:100%; text-align:center}
+.history li {box-sizing:border-box; margin:5px auto; padding:1.0em; width:90%; text-align:left; border:1px solid #ddd; border-radius:0.5em; background:#000; color:#fff; font-size:4vw}
+.history li p {overflow:hidden; padding-bottom:0.3em; font-size:1.0em; font-weight:800; white-space:nowrap; text-overflow:ellipsis}
+.history li dl {overflow:hidden; width:100%}
+.history li dl dt {clear:both; float:left; padding-bottom:5px; width:35%; line-height:1.5em; font-weight:200; font-size:0.875em}
+.history li dl dd {float:left; padding-bottom:5px; width:65%; line-height:1.5em; font-size:0.8em}
+.history li dl .homepage {float:none; clear:both; width:100%}
+.history li dd a {overflow:hidden; display:block; font-weight:500; white-space:nowrap; text-overflow:ellipsis}
+.history li dd a:hover, .history li dd a:focus {text-decoration:underline}
+
+
+@media all and (min-width:640px){
+.history {overflow:hidden; width:90%}
+.history li {float:left; margin:10px 0 0 2%; width:49%; min-height:48vw; font-size:3.0vw}
+.history li:nth-child(2n-1) {margin-left:0}
+}
+
+@media all and (min-width:1080px){
+.history {overflow:hidden}
+.history li {float:left; margin:10px 0 0 2%; width:31%; font-size:1.5vw; min-height:19em}
+.history li:nth-child(2n-1) {margin-left:2%}
+}
